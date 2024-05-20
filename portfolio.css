@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: black;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .interface {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 0px 4%;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+    
+    .interface a img {
+      width: 150px;
+      height: 150px;
+      border: 5px solid aquamarine;
+      border-radius: 50%
+    }
+    
+    header > .interface{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    header a{
+      color: aquamarine;
+      text-decoration: none;
+    }
+    
+    header nav ul{
+      list-style-type: none;
+    }
+    
+    header nav ul li{
+      display: inline-block;
+      padding: 0 40px;
+      font-size: 20px;
+    }
+    
+    header .pagetour button{
+      padding: 15px 50px;
+      font-size: 20px;
+      font-weight: 700;
+      background-color: aquamarine;
+      color: black;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    
+    header a:hover{
+      color: rgb(95, 189, 157)
+    }
+    
+    header .pagetour button:hover{
+      background-color: rgb(95, 189, 157)
+    }
+
+h1{
+  color: aquamarine;
+  text-align: center;
+  padding: 100px 0px;
+  font-size: 38px;
+}
+
+#square{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#roxf img{
+  width: 450px;
+  height: 550px;
+  border-radius: 22%;
+  padding: 0px 50px;
+  opacity: 0.5;
+}
+
+#vagas img{
+  width: 450px;
+  height: 550px;
+  border-radius: 22%;
+  padding: 0px 50px;
+  opacity: 0.5;
+}
+
+#vagas img:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#roxf img:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+footer{
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1080px) {
+  .interface a img, .menu-desktop, .pagetour, .topo-do-site {
+    display: none;
+  }
+}

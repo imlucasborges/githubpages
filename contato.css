@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+header {
+    padding: 0px 4%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background: black;
+    scroll-behavior: smooth;
+  }
+
+.interface a img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid aquamarine;
+    border-radius: 50%
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a{
+    color: aquamarine;
+    text-decoration: none;
+  }
+  
+  header nav ul{
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 20px;
+  }
+  
+  header .pagetour button{
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  header a:hover{
+    color: rgb(95, 189, 157)
+  }
+  
+  header .pagetour button:hover{
+    background-color: rgb(95, 189, 157)
+  }  
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    padding: 45px 0px; 
+}
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: aquamarine;
+    width: 500px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(235, 220, 220, 0.3) 0px 7px 13px -3px, rgba(184, 179, 179, 0.2) 0px -3px 0px inset;
+}
+section div h2{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section div form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: black;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: black;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: aquamarine;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: aquamarine;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: aquamarine;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  color: aquamarine;
+  background: black;
+  font-size: 45px;
+  padding-top: 15px;
+  padding-bottom: 100vh;
+}
+
+@media screen and (max-width: 1080px) {
+  .interface a img, .menu-desktop, .pagetour, .topo-do-site {
+    display: none;
+  }
+}
